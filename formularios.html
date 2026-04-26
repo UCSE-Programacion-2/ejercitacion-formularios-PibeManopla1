@@ -22,7 +22,25 @@
 
       <main class="page-main">
         <form method="post" action="#">
+            <form method="post" action="#">
             
+            <div class="input-group">
+                <label for="nombre">*Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+
+            <div class="input-group">
+                <label for="especie">*Especie</label>
+                <select id="especie" name="especie" required>
+                    <option value="" disabled selected>Especie</option>
+                    <option value="humano">Humano</option>
+                    <option value="alienigena">Alienígena</option>
+                    <option value="metahumano">Metahumano</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <button type="submit">Añadir</button>
+        </form>
             <button type="submit"> Añadir</button>
         </form>
       </main>
