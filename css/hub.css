@@ -1,4 +1,4 @@
-/* Pantalla Home (referencia visual). No forma parte de la autocalificación. */
+
 *,
 *::before,
 *::after {
@@ -9,7 +9,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Roboto", system-ui, sans-serif;
-  background: #fff;
+  background: #f2f2f2; 
   color: #000;
 }
 
@@ -34,6 +34,7 @@ a {
   margin: 0;
   font-size: 40px;
   font-weight: 400;
+  color: #000;
 }
 
 .main-nav {
@@ -50,11 +51,6 @@ a {
 .page-main {
   min-height: calc(100vh - 38px - 100px - 51px - 51px);
   padding: 32px 28px 120px;
-}
-
-.hub-note {
-  max-width: 640px;
-  line-height: 1.5;
 }
 
 .site-footer {
@@ -98,4 +94,99 @@ a {
 .fab-plus:focus-visible {
   outline: 3px solid #00669f;
   outline-offset: 3px;
+}
+
+.contenedor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.hero-card {
+  background: #fff;
+  width: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.hero-card:hover {
+  transform: translateY(-10px); 
+}
+
+.card-header {
+  position: relative;
+}
+
+.img-fondo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.icono-corazon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 25px;
+}
+
+.perfil {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -55px; 
+  position: relative;
+  background: #fff;
+}
+
+.textos-card {
+  padding: 20px 25px 30px;
+}
+
+.textos-card h2 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+.textos-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
+  height: 100px; 
+  overflow: hidden;
+}
+
+.boton-ver {
+  background: #00669f;
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton-ver:hover {
+  background: #004a75;
+}
+.page-shell {
+  max-width: 1024px;
+  margin: 0 auto;   
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.1); 
+}
+
+body {
+  background-color: #f2f2f2; 
+  margin: 0;
 }

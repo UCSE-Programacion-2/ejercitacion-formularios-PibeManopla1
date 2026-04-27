@@ -4,24 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DC Heroes — Añadí tu super | Programación II</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Karla&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/formularios.css" />
   </head>
   <body>
-    <!--
-      Plantilla guía — Completá el markup según el frame «Añadir» de Figma.
-      Recordá: los tests automáticos sólo miran este archivo y css/formularios.css.
-    -->
     <div class="page-shell">
       <div class="top-bar">Descuentos 20%</div>
 
       <header class="brand-header">
-        <p class="brand-title">DC Heroes</p>
+        <p class="brand-title">DC Heroes</p>  
       </header>
 
       <nav class="main-nav" aria-label="Principal">
@@ -31,21 +21,74 @@
       </nav>
 
       <main class="page-main">
-        <!-- TODO: envolver el formulario en <form method="post" action="#"> -->
-        <!-- TODO: título «Añadí tu super!» y texto guía de la maqueta -->
-        <!-- TODO: campos Nombre (*), Especie (*), Fecha, Foto, Descripción -->
-        <!-- TODO: fieldset Poderes con 4 checkboxes -->
-        <!-- TODO: fieldset Tipo de personaje con radios name="tipo-personaje" -->
-        <!-- TODO: botón <button type="submit">Añadir</button> -->
-        <p class="placeholder-copy">
-          Reemplazá este párrafo por el formulario completo respetando la jerarquía del diseño de
-          referencia.
-        </p>
+
+        <form method="post" action="#">
+           <h1 class="form-title">Añadí tu super!</h1>
+        <p class="form-subtitle">Agregá tu personaje favorito completando las opciones.</p>
+          <div class="form-container">
+            
+            <div class="form-column">
+              <div class="input-group">
+                <label for="nombre">*Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+              </div>
+
+              <div class="input-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha">
+              </div>
+
+              <div class="input-group">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+              </div>
+            </div>
+
+            <div class="form-column">
+              <div class="input-group">
+                <label for="especie">*Especie</label>
+                <select id="especie" name="especie" required>
+                  <option value="" disabled selected>Especie</option>
+                  <option value="humano">Humano</option>
+                  <option value="alienigena">Alienígena</option>
+                  <option value="metahumano">Metahumano</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="foto">Agregar Foto</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+              </div>
+
+              <fieldset>
+                <legend>Poderes</legend>
+                <div>
+                  <label><input type="checkbox" name="poderes" value="volar"> Volar</label>
+                  <label><input type="checkbox" name="poderes" value="superinteligencia"> SuperInteligencia</label>
+                  <label><input type="checkbox" name="poderes" value="vista-rayo-laser"> Vista de rayo láser</label>
+                  <label><input type="checkbox" name="poderes" value="billetera-gorda"> Billetera gorda</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Tipo de personaje</legend>
+                <div>
+                  <label><input type="radio" name="tipo-personaje" value="heroe"> Héroe / Heroína</label>
+                  <label><input type="radio" name="tipo-personaje" value="villano"> Villano / Villana</label>
+                </div>
+              </fieldset>
+            </div>
+            
+          </div> <button type="submit" class="btn-submit">Añadir</button>
+        </form>
       </main>
 
       <footer class="site-footer">
-        <p>Todos los derechos reservados - [TU NOMBRE Y APELLIDO]</p>
-        <a href="https://github.com/" class="footer-github">GitHub</a>
+        <p>Todos los derechos reservados - Segovia Santiago L.U</p>
+        <a href="https://github.com/" class="footer-github" target="_blank">
+            <img src="img/logogithub.png" alt="GitHub" width="80">
+        </a>
       </footer>
     </div>
   </body>
