@@ -17,60 +17,75 @@
       <nav class="main-nav" aria-label="Principal">
         <a href="#">Contacto</a>
         <a href="#">Registrarme</a>
-        <a href="#">Ingresar </a>
+        <a href="#">Ingresar</a>
       </nav>
 
       <main class="page-main">
-        <main class="page-main">
-        
         <h1>Añadí tu super!</h1>
         <p>Agregá tu personaje favorito completando las opciones.</p>
 
         <form method="post" action="#">
-            <form method="post" action="#">
+          <div class="form-container">
             
-            <div class="input-group">
+            <div class="form-column">
+              <div class="input-group">
                 <label for="nombre">*Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-            </div>
+              </div>
 
-           <div class="input-group">
+              <div class="input-group">
                 <label for="fecha">Fecha</label>
                 <input type="date" id="fecha" name="fecha">
-            </div>
+              </div>
 
-            <div class="input-group">
-                <label for="foto">Agregar Foto</label>
-                <input type="file" id="foto" name="foto" accept="image/*">
-            </div>
-
-            <div class="input-group">
+              <div class="input-group">
                 <label for="descripcion">Descripción</label>
                 <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+              </div>
             </div>
-            <fieldset>
+
+            <div class="form-column">
+              <div class="input-group">
+                <label for="especie">*Especie</label>
+                <select id="especie" name="especie" required>
+                  <option value="" disabled selected>Especie</option>
+                  <option value="humano">Humano</option>
+                  <option value="alienigena">Alienígena</option>
+                  <option value="metahumano">Metahumano</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="foto">Agregar Foto</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+              </div>
+
+              <fieldset>
                 <legend>Poderes</legend>
                 <div>
-                    <label><input type="checkbox" name="poderes" value="volar"> Volar</label>
-                    <label><input type="checkbox" name="poderes" value="superinteligencia"> SuperInteligencia</label>
-                    <label><input type="checkbox" name="poderes" value="vista-rayo-laser"> Vista de rayo láser</label>
-                    <label><input type="checkbox" name="poderes" value="billetera-gorda"> Billetera gorda</label>
+                  <label><input type="checkbox" name="poderes" value="volar"> Volar</label>
+                  <label><input type="checkbox" name="poderes" value="superinteligencia"> SuperInteligencia</label>
+                  <label><input type="checkbox" name="poderes" value="vista-rayo-laser"> Vista de rayo láser</label>
+                  <label><input type="checkbox" name="poderes" value="billetera-gorda"> Billetera gorda</label>
                 </div>
-            </fieldset>
-            <fieldset>
+              </fieldset>
+
+              <fieldset>
                 <legend>Tipo de personaje</legend>
                 <div>
-                    <label><input type="radio" name="tipo-personaje" value="heroe"> Héroe / Heroína</label>
-                    <label><input type="radio" name="tipo-personaje" value="villano"> Villano / Villana</label>
+                  <label><input type="radio" name="tipo-personaje" value="heroe"> Héroe / Heroína</label>
+                  <label><input type="radio" name="tipo-personaje" value="villano"> Villano / Villana</label>
                 </div>
-            </fieldset>
-        </form>
-            <button type="submit"> Añadir</button>
+              </fieldset>
+            </div>
+            
+          </div> <button type="submit" class="btn-submit">Añadir</button>
         </form>
       </main>
 
       <footer class="site-footer">
-        <p>Todos los derechos reservados - Segovia Santiago L.U. </p>
+        <p>Todos los derechos reservados - Segovia Santiago L.U</p>
         <a href="https://github.com/" class="footer-github" target="_blank">
             <img src="img/logogithub.png" alt="GitHub" width="80">
         </a>
