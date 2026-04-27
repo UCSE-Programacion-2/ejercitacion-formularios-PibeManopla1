@@ -29,15 +29,19 @@
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
             </div>
 
+           <div class="input-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+
             <div class="input-group">
-                <label for="especie">*Especie</label>
-                <select id="especie" name="especie" required>
-                    <option value="" disabled selected>Especie</option>
-                    <option value="humano">Humano</option>
-                    <option value="alienigena">Alienígena</option>
-                    <option value="metahumano">Metahumano</option>
-                    <option value="otro">Otro</option>
-                </select>
+                <label for="foto">Agregar Foto</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            <div class="input-group">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" rows="4"></textarea>
             </div>
             <button type="submit">Añadir</button>
         </form>
