@@ -34,7 +34,7 @@ a {
   margin: 0;
   font-size: 40px;
   font-weight: 400;
-  color: white;
+  color: #000;
 }
 
 .main-nav {
@@ -115,7 +115,7 @@ a {
 }
 
 .hero-card:hover {
-  transform: translateY(-10px); /* Efecto de levante al pasar el mouse */
+  transform: translateY(-10px); 
 }
 
 .card-header {
@@ -140,7 +140,7 @@ a {
   height: 110px;
   border-radius: 50%;
   border: 5px solid #fff;
-  margin-top: -55px; /* Hace que el avatar suba y tape la imagen */
+  margin-top: -55px; 
   position: relative;
   background: #fff;
 }
@@ -159,7 +159,7 @@ a {
   line-height: 1.6;
   color: #555;
   margin-bottom: 25px;
-  height: 100px; /* Para que todas las cards midan lo mismo */
+  height: 100px; 
   overflow: hidden;
 }
 
@@ -175,4 +175,18 @@ a {
 
 .boton-ver:hover {
   background: #004a75;
+}
+.page-shell {
+  max-width: 1024px;
+  margin: 0 auto;   
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.1); 
+}
+
+body {
+  background-color: #f2f2f2; 
+  margin: 0;
 }
